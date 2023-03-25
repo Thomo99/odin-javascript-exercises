@@ -19,12 +19,19 @@ const multiply = function(args) {
   return args.reduce((acc, curr) => acc * curr, 1);
 };
 
-const power = function() {
-	
+const power = function(a, b) {
+	return (a**b);
 };
 
-const factorial = function() {
-	
+const factorial = function(a) {
+	let fact = 1;
+  if (a == 1){
+    return fact;
+  }
+  for (let i = 1; i <= a; i++){
+    fact *= i;
+  }
+  return fact;
 };
 
 // Do not edit below this line
